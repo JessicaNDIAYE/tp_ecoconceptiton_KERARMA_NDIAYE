@@ -68,7 +68,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: pokemon; Type: TABLE; Schema: public; Owner: nathanarmanet
+-- Name: pokemon; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.pokemon (
@@ -83,10 +83,10 @@ CREATE TABLE public.pokemon (
 );
 
 
-ALTER TABLE public.pokemon OWNER TO nathanarmanet;
+ALTER TABLE public.pokemon OWNER TO postgres;
 
 --
--- Name: pokemon_colors; Type: TABLE; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_colors; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.pokemon_colors (
@@ -95,10 +95,10 @@ CREATE TABLE public.pokemon_colors (
 );
 
 
-ALTER TABLE public.pokemon_colors OWNER TO nathanarmanet;
+ALTER TABLE public.pokemon_colors OWNER TO postgres;
 
 --
--- Name: pokemon_colors_id_seq; Type: SEQUENCE; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_colors_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.pokemon_colors_id_seq
@@ -110,17 +110,17 @@ CREATE SEQUENCE public.pokemon_colors_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.pokemon_colors_id_seq OWNER TO nathanarmanet;
+ALTER SEQUENCE public.pokemon_colors_id_seq OWNER TO postgres;
 
 --
--- Name: pokemon_colors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_colors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.pokemon_colors_id_seq OWNED BY public.pokemon_colors.id;
 
 
 --
--- Name: pokemon_id_seq; Type: SEQUENCE; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.pokemon_id_seq
@@ -132,17 +132,17 @@ CREATE SEQUENCE public.pokemon_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.pokemon_id_seq OWNER TO nathanarmanet;
+ALTER SEQUENCE public.pokemon_id_seq OWNER TO postgres;
 
 --
--- Name: pokemon_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.pokemon_id_seq OWNED BY public.pokemon.id;
 
 
 --
--- Name: pokemon_shapes; Type: TABLE; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_shapes; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.pokemon_shapes (
@@ -151,10 +151,10 @@ CREATE TABLE public.pokemon_shapes (
 );
 
 
-ALTER TABLE public.pokemon_shapes OWNER TO nathanarmanet;
+ALTER TABLE public.pokemon_shapes OWNER TO postgres;
 
 --
--- Name: pokemon_shapes_id_seq; Type: SEQUENCE; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_shapes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.pokemon_shapes_id_seq
@@ -166,17 +166,17 @@ CREATE SEQUENCE public.pokemon_shapes_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.pokemon_shapes_id_seq OWNER TO nathanarmanet;
+ALTER SEQUENCE public.pokemon_shapes_id_seq OWNER TO postgres;
 
 --
--- Name: pokemon_shapes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_shapes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.pokemon_shapes_id_seq OWNED BY public.pokemon_shapes.id;
 
 
 --
--- Name: pokemon_species; Type: TABLE; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_species; Type: TABLE; Schema: public; Owner: 
 --
 
 CREATE TABLE public.pokemon_species (
@@ -201,10 +201,10 @@ CREATE TABLE public.pokemon_species (
 );
 
 
-ALTER TABLE public.pokemon_species OWNER TO nathanarmanet;
+ALTER TABLE public.pokemon_species OWNER TO postgres;
 
 --
--- Name: pokemon_species_id_seq; Type: SEQUENCE; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_species_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.pokemon_species_id_seq
@@ -216,17 +216,17 @@ CREATE SEQUENCE public.pokemon_species_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.pokemon_species_id_seq OWNER TO nathanarmanet;
+ALTER SEQUENCE public.pokemon_species_id_seq OWNER TO postgres;
 
 --
--- Name: pokemon_species_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_species_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.pokemon_species_id_seq OWNED BY public.pokemon_species.id;
 
 
 --
--- Name: pokemon_types; Type: TABLE; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_types; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.pokemon_types (
@@ -236,10 +236,10 @@ CREATE TABLE public.pokemon_types (
 );
 
 
-ALTER TABLE public.pokemon_types OWNER TO nathanarmanet;
+ALTER TABLE public.pokemon_types OWNER TO postgres;
 
 --
--- Name: pokemon_types_id_seq; Type: SEQUENCE; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_types_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.pokemon_types_id_seq
@@ -251,17 +251,17 @@ CREATE SEQUENCE public.pokemon_types_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.pokemon_types_id_seq OWNER TO nathanarmanet;
+ALTER SEQUENCE public.pokemon_types_id_seq OWNER TO postgres;
 
 --
--- Name: pokemon_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.pokemon_types_id_seq OWNED BY public.pokemon_types.id;
 
 
 --
--- Name: types; Type: TABLE; Schema: public; Owner: nathanarmanet
+-- Name: types; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.types (
@@ -272,10 +272,10 @@ CREATE TABLE public.types (
 );
 
 
-ALTER TABLE public.types OWNER TO nathanarmanet;
+ALTER TABLE public.types OWNER TO postgres;
 
 --
--- Name: pokemon_with_type; Type: VIEW; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_with_type; Type: VIEW; Schema: public; Owner: postgres
 --
 
 CREATE VIEW public.pokemon_with_type AS
@@ -292,10 +292,10 @@ CREATE VIEW public.pokemon_with_type AS
      JOIN public.pokemon_shapes s ON ((ps.shape_id = s.id)));
 
 
-ALTER VIEW public.pokemon_with_type OWNER TO nathanarmanet;
+ALTER VIEW public.pokemon_with_type OWNER TO postgres;
 
 --
--- Name: types_id_seq; Type: SEQUENCE; Schema: public; Owner: nathanarmanet
+-- Name: types_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.types_id_seq
@@ -307,59 +307,59 @@ CREATE SEQUENCE public.types_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.types_id_seq OWNER TO nathanarmanet;
+ALTER SEQUENCE public.types_id_seq OWNER TO postgres;
 
 --
--- Name: types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nathanarmanet
+-- Name: types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.types_id_seq OWNED BY public.types.id;
 
 
 --
--- Name: pokemon id; Type: DEFAULT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon ALTER COLUMN id SET DEFAULT nextval('public.pokemon_id_seq'::regclass);
 
 
 --
--- Name: pokemon_colors id; Type: DEFAULT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_colors id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon_colors ALTER COLUMN id SET DEFAULT nextval('public.pokemon_colors_id_seq'::regclass);
 
 
 --
--- Name: pokemon_shapes id; Type: DEFAULT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_shapes id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon_shapes ALTER COLUMN id SET DEFAULT nextval('public.pokemon_shapes_id_seq'::regclass);
 
 
 --
--- Name: pokemon_species id; Type: DEFAULT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_species id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon_species ALTER COLUMN id SET DEFAULT nextval('public.pokemon_species_id_seq'::regclass);
 
 
 --
--- Name: pokemon_types id; Type: DEFAULT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_types id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon_types ALTER COLUMN id SET DEFAULT nextval('public.pokemon_types_id_seq'::regclass);
 
 
 --
--- Name: types id; Type: DEFAULT; Schema: public; Owner: nathanarmanet
+-- Name: types id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.types ALTER COLUMN id SET DEFAULT nextval('public.types_id_seq'::regclass);
 
 
 --
--- Data for Name: pokemon; Type: TABLE DATA; Schema: public; Owner: nathanarmanet
+-- Data for Name: pokemon; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.pokemon (id, identifier, species_id, height, weight, base_experience, "order", is_default) VALUES (1, 'bulbasaur', 1, 7, 69, 64, 1, true);
@@ -1457,7 +1457,7 @@ INSERT INTO public.pokemon (id, identifier, species_id, height, weight, base_exp
 
 
 --
--- Data for Name: pokemon_colors; Type: TABLE DATA; Schema: public; Owner: nathanarmanet
+-- Data for Name: pokemon_colors; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.pokemon_colors (id, identifier) VALUES (1, 'black');
@@ -1473,7 +1473,7 @@ INSERT INTO public.pokemon_colors (id, identifier) VALUES (10, 'yellow');
 
 
 --
--- Data for Name: pokemon_shapes; Type: TABLE DATA; Schema: public; Owner: nathanarmanet
+-- Data for Name: pokemon_shapes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.pokemon_shapes (id, identifier) VALUES (1, 'ball');
@@ -1493,7 +1493,7 @@ INSERT INTO public.pokemon_shapes (id, identifier) VALUES (14, 'armor');
 
 
 --
--- Data for Name: pokemon_species; Type: TABLE DATA; Schema: public; Owner: nathanarmanet
+-- Data for Name: pokemon_species; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.pokemon_species (id, identifier, generation_id, evolves_from_species_id, evolution_chain_id, color_id, shape_id, habitat_id, gender_rate, capture_rate, base_happiness, is_baby, hatch_counter, has_gender_differences, growth_rate_id, forms_switchable, "order", conquest_order) VALUES (1, 'bulbasaur', 1, NULL, 1, 5, 8, 3, 1, 45, 50, false, 20, false, 4, false, 1, NULL);
@@ -2397,7 +2397,7 @@ INSERT INTO public.pokemon_species (id, identifier, generation_id, evolves_from_
 
 
 --
--- Data for Name: pokemon_types; Type: TABLE DATA; Schema: public; Owner: nathanarmanet
+-- Data for Name: pokemon_types; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.pokemon_types (id, type_id, slot) VALUES (1, 12, 1);
@@ -4078,7 +4078,7 @@ INSERT INTO public.pokemon_types (id, type_id, slot) VALUES (10194, 8, 2);
 
 
 --
--- Data for Name: types; Type: TABLE DATA; Schema: public; Owner: nathanarmanet
+-- Data for Name: types; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.types (id, identifier, generation_id, damage_class_id) VALUES (1, 'normal', 1, 2);
@@ -4104,49 +4104,49 @@ INSERT INTO public.types (id, identifier, generation_id, damage_class_id) VALUES
 
 
 --
--- Name: pokemon_colors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_colors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.pokemon_colors_id_seq', 1, false);
 
 
 --
--- Name: pokemon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.pokemon_id_seq', 1, false);
 
 
 --
--- Name: pokemon_shapes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_shapes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.pokemon_shapes_id_seq', 1, false);
 
 
 --
--- Name: pokemon_species_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_species_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.pokemon_species_id_seq', 1, false);
 
 
 --
--- Name: pokemon_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.pokemon_types_id_seq', 1, false);
 
 
 --
--- Name: types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nathanarmanet
+-- Name: types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.types_id_seq', 1, false);
 
 
 --
--- Name: pokemon_colors pokemon_colors_pk; Type: CONSTRAINT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_colors pokemon_colors_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon_colors
@@ -4154,7 +4154,7 @@ ALTER TABLE ONLY public.pokemon_colors
 
 
 --
--- Name: pokemon pokemon_pk; Type: CONSTRAINT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon pokemon_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon
@@ -4162,7 +4162,7 @@ ALTER TABLE ONLY public.pokemon
 
 
 --
--- Name: pokemon_shapes pokemon_shapes_pk; Type: CONSTRAINT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_shapes pokemon_shapes_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon_shapes
@@ -4170,7 +4170,7 @@ ALTER TABLE ONLY public.pokemon_shapes
 
 
 --
--- Name: pokemon_species pokemon_species_pk; Type: CONSTRAINT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_species pokemon_species_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon_species
@@ -4178,7 +4178,7 @@ ALTER TABLE ONLY public.pokemon_species
 
 
 --
--- Name: pokemon_types pokemon_types_pk; Type: CONSTRAINT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_types pokemon_types_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon_types
@@ -4186,7 +4186,7 @@ ALTER TABLE ONLY public.pokemon_types
 
 
 --
--- Name: types types_pk; Type: CONSTRAINT; Schema: public; Owner: nathanarmanet
+-- Name: types types_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.types
@@ -4194,21 +4194,21 @@ ALTER TABLE ONLY public.types
 
 
 --
--- Name: pokemon_species_id_index; Type: INDEX; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_species_id_index; Type: INDEX; Schema: public; Owner: postgres
 --
 
 CREATE INDEX pokemon_species_id_index ON public.pokemon USING btree (species_id);
 
 
 --
--- Name: pokemon_types_type_id_index; Type: INDEX; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_types_type_id_index; Type: INDEX; Schema: public; Owner: postgres
 --
 
 CREATE INDEX pokemon_types_type_id_index ON public.pokemon_types USING btree (type_id);
 
 
 --
--- Name: pokemon_species pokemon_species_pokemon_species_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_species pokemon_species_pokemon_species_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon_species
@@ -4216,7 +4216,7 @@ ALTER TABLE ONLY public.pokemon_species
 
 
 --
--- Name: pokemon_types pokemon_types_pokemon_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: nathanarmanet
+-- Name: pokemon_types pokemon_types_pokemon_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.pokemon_types
